@@ -1,5 +1,4 @@
-
-import '../scss/style.scss' 
+import '../scss/style.scss'
 import '../fonts/OpenSans/OpenSans-Bold.ttf'
 import '../fonts/OpenSans/OpenSans-BoldItalic.ttf'
 import '../fonts/OpenSans/OpenSans-ExtraBold.ttf'
@@ -18,21 +17,21 @@ var readMore = document.querySelectorAll(".read-more");
 var closeBox = document.getElementById("closeBox");
 var targetImage = document.getElementById("target-image");
 
-closeBox.addEventListener("click", function() {
+closeBox.addEventListener("click", function () {
     closeLightbox()
 });
 
-figures.forEach(function(figure) {
-    figure.addEventListener("click", function() {
+figures.forEach(function (figure) {
+    figure.addEventListener("click", function () {
         var src = figure.getAttribute("data-src");
         openLightbox(src);
     });
 });
 
-readMore.forEach(function(read) {
-    read.addEventListener("click", function(){
+readMore.forEach(function (read) {
+    read.addEventListener("click", function () {
         var title = read.parentNode.querySelector(".title");
-        console.log("Read more: "+ title.textContent);
+        console.log("Read more: " + title.textContent);
     })
 });
 
@@ -42,5 +41,5 @@ function openLightbox(src) {
 };
 
 function closeLightbox() {
-  document.getElementById('Lightbox').style.display = 'none';
+    document.getElementById('Lightbox').style.display = 'none';
 };
