@@ -239,7 +239,7 @@ a.underlined:hover {
     display: none;
     position: fixed;
     z-index: 1;
-    padding: 10px 62px 0px 62px;
+    padding: 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -266,13 +266,15 @@ a.underlined:hover {
     margin: auto;
     padding: 0 0 0 0;
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
     height: 100%;
     align-items: center;
 }
 
 .image-box-content img {
-    max-width: 55vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .close {
@@ -282,6 +284,7 @@ a.underlined:hover {
     right: 25px;
     font-size: 35px;
     font-weight: bold;
+    z-index: 999;
 }
 
 .close:hover,
